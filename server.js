@@ -45,6 +45,11 @@ app.get('/', (req, res) => {
     });
 })
 
+app.get('/contact-us', (req,res) => {
+    res.render('contact-us', {
+        pageTitle: 'Contact Us',
+    });
+})
 
 app.get('/about', (req,res) => {
     res.render('about', {
